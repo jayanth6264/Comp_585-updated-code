@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to The Math Page</title>
+        <link rel="stylesheet" type="text/css" href="mathstyle.css">
+    </head>
+    <body>
+
+      <div class="topnav">
+        <a class="active" >Pathfinder</a>
+        <a href="index.html">Home</a>
+        <a href="physic.html">physic_page</a>
+        <a href="cal.html">calculator</a>        
+      </div>
+
+      <div class="title">
+        <h2>Mathematics</h2>
+      </div>
+
+      <div class="wrapper">
+        <div class="box a">
+          <button class="areaDropbtn" onclick="areaDropdownFunction()">Area</button>
+          <div class="dropdown-content" id="areaDropdown">
+            <a href="square.html">Square</a>
+            <a href="rectangle.html">Rectangle</a>
+            <a href="circle.html">Circle</a>
+            <a href="cone.html">Cone</a>
+            <a href="sphere.html">Sphere</a>
+            <a href="triangle.html">Triangle</a>
+            <a href="rhombus.html">Rhombus</a>
+            <a href="cube.html">cube</a>
+          </div>
+        </div>
+        <div class="box b">
+          <button class="volumeDropbtn" onclick="volumeDropdownFunction()">Volume</button>
+          <div class="dropdown-content" id="volumeDropdown">
+            <a href="cubevol.html">Cube</a>
+            <a href="cuboidvol.html">Cuboid</a>
+            <a href="conevol.html">Cone</a>
+            <a href="prismvol.html">Regular prism </a>
+            <a href="cylindervol.html">Cylinder</a>
+            <a href="spherevol.html">Sphere</a>
+          </div>
+        </div>
+        <div class="box c">
+          <button class="trigDropbtn" onclick="trigDropdownFunction()">Trigonomtry</button>
+          <div class="dropdown-content" id="trigDropdown">
+            <a href="solutionmath.html">Exact Values</a>
+            <a href="solutionmath.html">Angle</a>
+            <a href="solutionmath.html">Difference Formulas</a>
+            <a href="solutionmath.html">Sum Formulas</a>
+          </div>
+        </div>
+        <div class="box d">
+          <button class="radiusDropbtn" onclick="radiusDropdownFunction()">Perimeter</button>
+          <div class="dropdown-content" id="radiusDropdown">
+            <a href="squareper.html">Square</a>
+            <a href="rectangleper.html">Rectangle</a>
+            <a href="triangleper.html">Triangle</a>
+            <a href="circleper.html">Circle</a>
+          </div>
+        </div>
+      </div>
+
+
+      <script>
+       
+        function areaDropdownFunction() {
+          document.getElementById("areaDropdown").classList.toggle("show");
+        }
+
+        function volumeDropdownFunction() {
+          document.getElementById("volumeDropdown").classList.toggle("show");
+        }
+
+        function trigDropdownFunction() {
+          document.getElementById("trigDropdown").classList.toggle("show");
+        }
+
+        function radiusDropdownFunction() {
+          document.getElementById("radiusDropdown").classList.toggle("show");
+        }
+        
+        
+        window.onclick = function(e) {
+          if (!e.target.matches('.areaDropbtn')) {
+          var myDropdown = document.getElementById("areaDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+
+          if (!e.target.matches('.volumeDropbtn')) {
+          var myDropdown = document.getElementById("volumeDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+
+          if (!e.target.matches('.trigDropbtn')) {
+          var myDropdown = document.getElementById("trigDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+
+          if (!e.target.matches('.radiusDropbtn')) {
+          var myDropdown = document.getElementById("radiusDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        </script>
+
+    </body>
+</html>

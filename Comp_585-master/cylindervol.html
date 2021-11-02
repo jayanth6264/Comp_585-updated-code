@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to The Math's solution Page</title>
+        <link rel="stylesheet" type="text/css" href="mathstyle.css">
+    </head>
+    <body>
+
+      <div class="topnav">
+        <a class="active" >Pathfinder</a>
+        <a href="index.html">Home</a>
+        <a href="physic.html">physic_page</a>
+        <a href="math.html">math_page</a>
+        <a href="cal.html">calculator</a>        
+      </div>
+
+      <div class="title">
+        <h2>Mathematic Solution</h2>
+      </div>
+      <script>
+      function myfun()
+            {
+                pi=3.14;
+                var a=document.getElementById('number').value;
+                var h=document.getElementById('number').value;
+                document.getElementById('result').innerHTML=(pi*a*a*h);
+            }
+       </script>
+           Enter the radius:
+          <input type="number" value="" id="number"><br><br>
+          Enter the height:
+          <input type="number" value="" id="number"><br><br>
+          <input type="submit" value="calculate" onclick="return myfun()">
+          <b>the result is:</b>
+          <b><span id="result"></span></b>
+
+
+
+    </body>
+    </html>
